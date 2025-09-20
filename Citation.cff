@@ -1,0 +1,17 @@
+CITATION.cff
+cff-version: 1.2.0
+title: "Design and Behavioural Simulation of AUM-Based Ternary Logic Gates for Multi-Valued Digital Systems"
+message: "If you use this repository, please cite it as below."
+type: article
+authors:
+  - family-names: "Dey"
+    given-names: "Diptanu"
+  - family-names: "Chakraborty"
+    given-names: "Raj"
+  - family-names: "Das"
+    given-names: "Punam"
+  - family-names: "Ghosh"
+    given-names: "Pronob K."
+year: 2025
+doi: ""
+url: "https://github.com/ghoshkpronob-cloud/RSOS_Data_File"
