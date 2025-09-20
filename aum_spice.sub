@@ -1,0 +1,32 @@
+* AUM behavioral SPICE subcircuits (templates)
+* Voltage mapping: M=0V, U=1.65V, A=3.3V
+* These are behavioral templates using B-sources or ideal voltage-controlled-voltage sources.
+* Replace X1 ports with actual node names when instantiating.
+
+* NOT gate (behavioral)
+.SUBCKT AUM_NOT IN OUT VSS
+* Example using a behavioral voltage source (syntax varies by SPICE):
+B1 OUT 0 V=IF(V(IN,0) > 2.475, 0, IF(V(IN,0) < 0.825, 3.3, 1.65))
+* Explanation: if IN>2.475V (A) -> OUT = 0V (M)
+*            if IN<0.825V (M) -> OUT = 3.3V (A)
+*            otherwise -> OUT = 1.65V (U)
+.ENDS AUM_NOT
+
+* Min (AND) gate
+.SUBCKT AUM_MIN IN1 IN2 OUT VSS
+* OUT = min(IN1, IN2) evaluated in voltage domains (choose thresholds accordingly)
+* Use behavioral expressions or idealized comparator networks in practice.
+.ENDS AUM_MIN
+
+* Max (OR) gate
+.SUBCKT AUM_MAX IN1 IN2 OUT VSS
+* OUT = max(IN1, IN2)
+.ENDS AUM_MAX
+
+* XNOR (equality)
+.SUBCKT AUM_XNOR IN1 IN2 OUT VSS
+* Implement equality/opposite checks with B-sources and comparators.
+.ENDS AUM_XNOR
+
+* Note: The exact syntax for behavioral sources differs among SPICE variants (ngspice, LTspice, HSPICE).
+* These templates are placeholders to guide a transistor-level or behavioral SPICE implementation.
