@@ -32,4 +32,3 @@ If you use this work, please cite:
 
 Dey, D., Chakraborty, R., Das, P., Das, D., & Ghosh, K., P.
 “Design and Behavioural Simulation of AUM-Based Ternary Logic Gates for Multi-Valued Digital Systems.” (2025).
-📜 License
