@@ -1,0 +1,5 @@
+AUM Ternary Logic Voltage Mapping
+---------------------------------
+A (Active / +1) = 3.3 V
+U (Neutral / 0) = 1.65 V
+M (Negative / -1) = 0 V
