@@ -1,4 +1,5 @@
-README for AUM-Ternary-Logic-Gates Repository
+AUM-Ternary-Logic-Gates Repository
+
 📖 Overview
 This repository contains the manuscript, truth tables, and simulation data for the paper:
 
@@ -32,4 +33,3 @@ If you use this work, please cite:
 Dey, D., Chakraborty, R., Das, P., Das, D., & Ghosh, K., P.
 “Design and Behavioural Simulation of AUM-Based Ternary Logic Gates for Multi-Valued Digital Systems.” (2025).
 📜 License
-[MIT License](LICENSE)
